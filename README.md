@@ -52,7 +52,7 @@ This repo uses a `.gitignore` to keep sensitive or machine-specific files out of
 - `.terraform/` (plugin cache)
 - `*.tfstate`, `*.tfstate.backup` (state files)
 - `*.tfvars` (variable secrets)
-- - `*.pem` (private keys)
+- `*.pem` (private keys)
 - `*.key` (private keys)
 - `crash.log`
 
