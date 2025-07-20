@@ -1,0 +1,21 @@
+=> Load Order Semantics in Terraform refers to the order in which Terraform loads and processes files in a configuration directory.
+
+In Simple Words:
+
+-> Terraform looks at all the .tf and .tf.json files in your folder. The order of the files does not matter, because:
+
+-> Terraform loads all configuration files in a directory simultaneously (not line-by-line or top-to-bottom).
+
+=> So what does "load-order-semantic" mean in Terraform?
+
+It means:
+
+-> We don’t have to worry about file names or order like you would in traditional programming.
+
+-> Terraform parses all files together, merges their definitions, and builds the resource graph from that.
+
+=> Summary:
+
+->  "Load-order semantic" means: Terraform does not rely on file order.
+-> All .tf files in a folder are treated as one combined configuration.
+-> We can split files logically (e.g., provider.tf, main.tf, outputs.tf) without worrying about which loads first.

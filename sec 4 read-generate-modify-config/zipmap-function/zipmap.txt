@@ -1,0 +1,17 @@
+The zipmap() function in Terraform is very useful when you want to create a map from two lists — one for keys, and the other for values.
+
+
+zipmap(keyslist, valueslist)
+
+    -> Takes two lists:
+        -> The first list becomes the keys.
+        -> The second list becomes the values.
+    -> Returns a map
+
+=> Use Case Ideas:
+
+    -> Dynamically assign tags to resources
+
+    -> Combine two separate input lists into one variable
+
+    -> Pass key-value pairs into a module

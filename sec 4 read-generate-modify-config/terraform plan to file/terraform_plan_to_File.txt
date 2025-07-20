@@ -1,0 +1,1 @@
+Terraform allows saving a plan to file

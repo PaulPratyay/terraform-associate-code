@@ -1,0 +1,13 @@
+# Using a data source to read a local file from the Terraform module directory
+
+data "local_file" "data_source" {
+  filename = "${path.module}/DataSource.txt"
+
+}
+
+# Output block to display the contents of the file in CLI
+
+output "data" {
+  value = data.local_file.data_source.content
+
+}

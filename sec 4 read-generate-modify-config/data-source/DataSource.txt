@@ -1,0 +1,10 @@
+=> Overview of Data Sources
+
+    => Introducing Data Source
+
+        -> Data source allow Terraform to use/fetch information defined outside of Terraform
+        -> A data source lets us fetch information about existing resources that are not created by our Terraform code, but we still want to use their values in our configuration
+
+    => Example 1 - Reading Info of DigitalOcean Account
+
+        data "digitalocean_account" "example" {}
